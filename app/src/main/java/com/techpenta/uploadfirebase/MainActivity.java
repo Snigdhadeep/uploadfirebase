@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (filepath!=null) {
 
-            StorageReference riversRef = mStorageRef.child("images/check.jpg");
+            StorageReference riversRef = mStorageRef.child("images/"+filepath.getLastPathSegment());
             final ProgressDialog progressDialog = new ProgressDialog(this);
             progressDialog.setTitle("Uploading.....");
             progressDialog.show();
